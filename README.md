@@ -7,7 +7,7 @@ A modern, responsive portfolio website showcasing DevOps engineering skills and 
 - **Responsive Design**: Mobile-first approach that looks great on all devices
 - **Modern UI**: Clean, professional design using Bootstrap 5
 - **Interactive Navigation**: Smooth scrolling and active section highlighting
-- **Project Showcases**: Detailed project pages with technical descriptions
+- **Project Showcases**: Detailed project pages highlighting business impact and outcomes in approachable language
 - **Professional Contact**: Direct email integration for easy communication
 - **Performance Optimized**: Fast loading with optimized images and minimal dependencies
 
@@ -29,29 +29,33 @@ devopsPortfolio/
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup for accessibility and SEO
-- **CSS3**: Custom styles with CSS Grid and Flexbox
+- **CSS3**: Custom styles that supplement Bootstrap 5's grid and layout system
 - **Bootstrap 5**: Responsive framework for consistent UI components
 - **JavaScript (Vanilla)**: Interactive functionality without dependencies
 - **Font Awesome**: Professional icons for visual enhancement
 - **Unsplash**: High-quality stock images for professional appearance
 
+## 📋 Project Creation Prompt
+
+#new I need a new simple DevOps Engineering Portfolio website, using index.html, styles.css, and script.js files. I would like it to use Bootstrap for styling, to give it a clean, modern look. I would like to have a top navbar that shrinks to the hamburger menu when the screen is too small. I would like the site to be responsive. On Index, I would like a you to fill in information for someone who is looking to showcase their knowledge in DevOps to potential employers. I would like to keep the tone friendly and sprinkle tech terms lightly to impress someone in a position like HR that might not know everything. I'm thinking maybe an 'about me' section, a portfolio section with links for each project with more info, a contact me section that gives a warm invite to contact me by email with a link. I would like to create a page for each of the portfolio project examples, giving a generic DevOps example description listing tools and why they were used for each example. Name them project1.html, project2.html, project3.html. Use the existing styles.css for these as well, and make sure they also have the header and footer, so the user can navigate back. Please include stock or generated images instead of blank image templates. The sections of the index page should be included in the navbar, to jump down to that section. I would like to keep this local for now, so no repository yet. Please only add comments to the code for potentially confusing code usage. My name is Adam Carter and my email is adamcarter22@hotmail.com.
+
 ## 🎯 Projects Showcased
 
 ### 1. Automated CI/CD Pipeline
 
-- **Technologies**: Jenkins, Docker, Git, AWS
+- **Technologies**: Jenkins (automation server for building and deploying code), Docker (tool for packaging applications into containers), Git (version control system for tracking code changes), AWS (cloud platform for hosting and scaling applications)
 - **Focus**: Streamlining development workflows and automated deployment
 - **Impact**: Reduced deployment time from 2 hours to 15 minutes
 
 ### 2. Cloud Infrastructure Setup
 
-- **Technologies**: AWS, Terraform, EC2, VPC
+- **Technologies**: AWS (cloud platform for hosting and scaling applications), Terraform (tool for automating infrastructure setup), EC2 (virtual servers in the cloud), VPC (Virtual Private Cloud for secure networking)
 - **Focus**: Scalable and secure infrastructure using Infrastructure as Code
 - **Impact**: 99.9% uptime with 40% cost reduction through optimization
 
 ### 3. Monitoring & Analytics Platform
 
-- **Technologies**: Prometheus, Grafana, Kubernetes, AlertManager
+- **Technologies**: Prometheus (system for collecting and storing monitoring data), Grafana (tool for visualizing metrics and dashboards), Kubernetes (platform for managing containerized applications), AlertManager (system for sending alerts based on monitoring data)
 - **Focus**: Comprehensive observability and real-time system insights
 - **Impact**: Reduced MTTR from 4 hours to 30 minutes
 
@@ -107,7 +111,8 @@ To customize this portfolio for your own use:
 - **Custom CSS Variables**: Consistent color scheme throughout
 - **Smooth Animations**: Hover effects and scroll-triggered animations
 - **Professional Typography**: Clean, readable fonts optimized for web
-- **Accessibility**: Semantic HTML and proper ARIA labels
+- **Accessibility**: Semantic HTML and proper ARIA labels  
+  _Tip: For guidance on ARIA usage, see [WAI-ARIA best practices](https://www.w3.org/WAI/ARIA/apg/)_.
 - **SEO Optimized**: Meta tags and structured content
 
 ## 📈 Performance
