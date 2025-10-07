@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring & Analytics - Adam Carter Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code-branch me-2"></i>Adam Carter
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="index.html#portfolio" class="btn btn-outline-light mb-4">
+                        <i class="fas fa-arrow-left me-2"></i>Back to Portfolio
+                    </a>
+                    <h1 class="display-4 fw-bold mb-3">Monitoring & Analytics Platform</h1>
+                    <p class="lead">Comprehensive observability solution with real-time insights and alerting</p>
+                    <div class="mt-4">
+                        <span class="badge bg-light text-dark me-2 fs-6">Prometheus</span>
+                        <span class="badge bg-light text-dark me-2 fs-6">Grafana</span>
+                        <span class="badge bg-light text-dark me-2 fs-6">Kubernetes</span>
+                        <span class="badge bg-light text-dark me-2 fs-6">AlertManager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mb-5">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Monitoring Dashboard" class="img-fluid project-image mb-4">
+                        
+                        <h3 class="mb-4">Project Overview</h3>
+                        <p class="mb-4">
+                            This project demonstrates the implementation of a comprehensive monitoring and observability 
+                            platform using Prometheus and Grafana in a Kubernetes environment. The solution provides 
+                            real-time visibility into application performance, infrastructure health, and business metrics.
+                        </p>
+                        
+                        <h4 class="mb-3">The Challenge</h4>
+                        <p class="mb-4">
+                            The development team lacked visibility into application performance and infrastructure health, 
+                            making it difficult to identify issues proactively. When problems occurred, troubleshooting 
+                            was reactive and time-consuming, often resulting in extended downtime and poor user experience.
+                        </p>
+                        
+                        <h4 class="mb-3">The Solution</h4>
+                        <p class="mb-4">
+                            I designed and implemented a full-stack monitoring solution using Prometheus for metrics 
+                            collection, Grafana for visualization, and AlertManager for intelligent alerting. The platform 
+                            provides 360-degree visibility across all layers of the application stack.
+                        </p>
+                    </div>
+
+                    <!-- Monitoring Stack -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">Monitoring Stack Components</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-chart-bar text-warning me-2"></i>Metrics Collection
+                                        </h5>
+                                        <p class="card-text">
+                                            Prometheus scrapes metrics from applications, Kubernetes components, and 
+                                            infrastructure services. Custom exporters collect business-specific metrics.
+                                        </p>
+                                        <div class="mt-2">
+                                            <span class="badge bg-light text-dark me-1">Prometheus</span>
+                                            <span class="badge bg-light text-dark me-1">Node Exporter</span>
+                                            <span class="badge bg-light text-dark me-1">Custom Exporters</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-chart-line text-warning me-2"></i>Visualization
+                                        </h5>
+                                        <p class="card-text">
+                                            Grafana dashboards provide real-time visualization of metrics with customizable 
+                                            views for different teams and stakeholders, from technical to business metrics.
+                                        </p>
+                                        <div class="mt-2">
+                                            <span class="badge bg-light text-dark me-1">Grafana</span>
+                                            <span class="badge bg-light text-dark me-1">Custom Dashboards</span>
+                                            <span class="badge bg-light text-dark me-1">Data Sources</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-bell text-warning me-2"></i>Alerting
+                                        </h5>
+                                        <p class="card-text">
+                                            AlertManager processes alerts from Prometheus, providing intelligent routing, 
+                                            grouping, and escalation policies to reduce alert fatigue and ensure timely response.
+                                        </p>
+                                        <div class="mt-2">
+                                            <span class="badge bg-light text-dark me-1">AlertManager</span>
+                                            <span class="badge bg-light text-dark me-1">Slack Integration</span>
+                                            <span class="badge bg-light text-dark me-1">PagerDuty</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">Monitoring Categories</h3>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-server text-primary me-2"></i>Infrastructure Metrics
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li>• CPU, Memory, and Disk utilization</li>
+                                            <li>• Network traffic and latency</li>
+                                            <li>• Kubernetes cluster health</li>
+                                            <li>• Container resource consumption</li>
+                                            <li>• Storage performance metrics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <i class="fas fa-code text-primary me-2"></i>Application Metrics
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li>• Request rate and response times</li>
+                                            <li>• Error rates and status codes</li>
+                                            <li>• Database query performance</li>
+                                            <li>• Cache hit/miss ratios</li>
+                                            <li>• Custom business metrics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="tech-stack">
+                        <h4 class="mb-3">Technologies Used</h4>
+                        <div class="mb-4">
+                            <h6><i class="fas fa-chart-bar text-warning me-2"></i>Prometheus</h6>
+                            <p class="small text-muted">
+                                Time-series database and monitoring system with powerful query language 
+                                (PromQL) for complex metric analysis and alerting rules.
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <h6><i class="fas fa-chart-line text-warning me-2"></i>Grafana</h6>
+                            <p class="small text-muted">
+                                Visualization platform providing beautiful, interactive dashboards with 
+                                support for multiple data sources and customizable alerts.
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <h6><i class="fas fa-dharmachakra text-warning me-2"></i>Kubernetes</h6>
+                            <p class="small text-muted">
+                                Container orchestration platform providing native integration with 
+                                monitoring tools and service discovery capabilities.
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <h6><i class="fas fa-bell text-warning me-2"></i>AlertManager</h6>
+                            <p class="small text-muted">
+                                Handles alerts from Prometheus with sophisticated routing, grouping, 
+                                and notification features to prevent alert fatigue.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Monitoring Improvements</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Reduced MTTR from 4 hours to 30 minutes
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    99.5% reduction in alert noise
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Proactive issue detection increased 80%
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Real-time visibility across all services
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Automated capacity planning insights
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Examples -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-4">Dashboard Examples</h3>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-tachometer-alt fa-3x text-warning mb-3"></i>
+                                    <h5 class="card-title">Executive Dashboard</h5>
+                                    <p class="card-text">
+                                        High-level business metrics including SLA compliance, revenue impact, 
+                                        and user satisfaction scores for leadership visibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-tools fa-3x text-warning mb-3"></i>
+                                    <h5 class="card-title">Operations Dashboard</h5>
+                                    <p class="card-text">
+                                        Technical metrics for operations teams including infrastructure health, 
+                                        performance trends, and system capacity utilization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-bug fa-3x text-warning mb-3"></i>
+                                    <h5 class="card-title">Application Dashboard</h5>
+                                    <p class="card-text">
+                                        Application-specific metrics for development teams including error rates, 
+                                        response times, and feature usage analytics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerting Strategy -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="mb-0">
+                                <i class="fas fa-exclamation-triangle text-warning me-2"></i>Intelligent Alerting Strategy
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Alert Prioritization</h6>
+                                    <p class="small mb-3">
+                                        Implemented three-tier alerting system: Critical (immediate response), 
+                                        Warning (next business day), and Info (weekly summary).
+                                    </p>
+                                    <h6>Smart Grouping</h6>
+                                    <p class="small mb-3">
+                                        Related alerts are grouped together to provide context and prevent 
+                                        notification spam during cascading failures.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Escalation Policies</h6>
+                                    <p class="small mb-3">
+                                        Automated escalation through team hierarchy with configurable 
+                                        timeouts and multiple notification channels.
+                                    </p>
+                                    <h6>Contextual Information</h6>
+                                    <p class="small mb-3">
+                                        Alerts include relevant context, runbook links, and suggested 
+                                        remediation steps to accelerate resolution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Adam Carter. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="index.html" class="text-white text-decoration-none">
+                        <i class="fas fa-home me-2"></i>Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
