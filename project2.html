@@ -1,338 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cloud Infrastructure Setup - Adam Carter Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-code-branch me-2"></i>Adam Carter
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-code-branch me-2"></i>Adam Carter
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Project Header -->
-    <section class="project-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="index.html#portfolio" class="btn btn-outline-light mb-4">
-                        <i class="fas fa-arrow-left me-2"></i>Back to Portfolio
-                    </a>
-                    <h1 class="display-4 fw-bold mb-3">Cloud Infrastructure Setup</h1>
-                    <p class="lead">Scalable and secure AWS infrastructure using Infrastructure as Code</p>
-                    <div class="mt-4">
-                        <span class="badge bg-light text-dark me-2 fs-6">AWS</span>
-                        <span class="badge bg-light text-dark me-2 fs-6">Terraform</span>
-                        <span class="badge bg-light text-dark me-2 fs-6">EC2</span>
-                        <span class="badge bg-light text-dark me-2 fs-6">VPC</span>
-                    </div>
-                </div>
+    <header class="project-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="index.html#portfolio" class="btn btn-outline-light mb-4">
+              <i class="fas fa-arrow-left me-2"></i>Back to Portfolio
+            </a>
+            <h1 class="display-4 fw-bold mb-3">Cloud Infrastructure Setup</h1>
+            <p class="lead">
+              Scalable and secure AWS infrastructure using Infrastructure as
+              Code
+            </p>
+            <div class="mt-4">
+              <span class="badge bg-light text-dark me-2 fs-6">AWS</span>
+              <span class="badge bg-light text-dark me-2 fs-6">Terraform</span>
+              <span class="badge bg-light text-dark me-2 fs-6">EC2</span>
+              <span class="badge bg-light text-dark me-2 fs-6">VPC</span>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </header>
 
     <!-- Project Content -->
-    <section class="project-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="mb-5">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                             alt="Cloud Infrastructure Architecture" class="img-fluid project-image mb-4">
-                        
-                        <h3 class="mb-4">Project Overview</h3>
-                        <p class="mb-4">
-                            This project showcases the design and deployment of a scalable, secure, and cost-effective 
-                            cloud infrastructure on AWS using Terraform for Infrastructure as Code (IaC). The solution 
-                            provides a robust foundation for hosting web applications with high availability and disaster recovery.
-                        </p>
-                        
-                        <h4 class="mb-3">The Challenge</h4>
-                        <p class="mb-4">
-                            The organization needed to migrate from on-premises infrastructure to the cloud while maintaining 
-                            security standards, ensuring scalability, and optimizing costs. Manual infrastructure provisioning 
-                            was creating inconsistencies and making it difficult to replicate environments for testing and staging.
-                        </p>
-                        
-                        <h4 class="mb-3">The Solution</h4>
-                        <p class="mb-4">
-                            I architected a multi-tier AWS infrastructure using Terraform, implementing best practices for 
-                            security, scalability, and maintainability. The solution includes automated provisioning, 
-                            comprehensive monitoring, and disaster recovery capabilities.
-                        </p>
-                    </div>
+    <main class="project-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="mb-5">
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Diagram illustrating AWS cloud infrastructure components"
+                class="img-fluid project-image mb-4"
+              />
 
-                    <!-- Architecture Components -->
-                    <div class="mb-5">
-                        <h3 class="mb-4">Infrastructure Architecture</h3>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <i class="fas fa-network-wired text-success me-2"></i>Network Layer
-                                        </h5>
-                                        <ul class="list-unstyled">
-                                            <li>• Custom VPC with public/private subnets</li>
-                                            <li>• Internet Gateway and NAT Gateways</li>
-                                            <li>• Route tables and security groups</li>
-                                            <li>• Network ACLs for additional security</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <i class="fas fa-server text-success me-2"></i>Compute Layer
-                                        </h5>
-                                        <ul class="list-unstyled">
-                                            <li>• Auto Scaling Groups for elasticity</li>
-                                            <li>• Application Load Balancer</li>
-                                            <li>• EC2 instances across multiple AZs</li>
-                                            <li>• Launch templates with user data</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <i class="fas fa-database text-success me-2"></i>Data Layer
-                                        </h5>
-                                        <ul class="list-unstyled">
-                                            <li>• RDS Multi-AZ for high availability</li>
-                                            <li>• S3 buckets with versioning</li>
-                                            <li>• ElastiCache for session management</li>
-                                            <li>• Automated backups and snapshots</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <i class="fas fa-shield-alt text-success me-2"></i>Security Layer
-                                        </h5>
-                                        <ul class="list-unstyled">
-                                            <li>• IAM roles and policies</li>
-                                            <li>• AWS WAF for application protection</li>
-                                            <li>• CloudTrail for audit logging</li>
-                                            <li>• KMS for encryption at rest</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <h3 class="mb-4">Project Overview</h3>
+              <p class="mb-4">
+                This project showcases the design and deployment of a scalable,
+                secure, and cost-effective cloud infrastructure on AWS using
+                Terraform for Infrastructure as Code (IaC). The solution
+                provides a robust foundation for hosting web applications with
+                high availability and disaster recovery.
+              </p>
 
-                <!-- Sidebar -->
-                <div class="col-lg-4">
-                    <div class="tech-stack">
-                        <h4 class="mb-3">Technologies Used</h4>
-                        <div class="mb-4">
-                            <h6><i class="fab fa-aws text-success me-2"></i>Amazon Web Services</h6>
-                            <p class="small text-muted">
-                                Chosen for its comprehensive service portfolio, global infrastructure, 
-                                and enterprise-grade security and compliance features.
-                            </p>
-                        </div>
-                        <div class="mb-4">
-                            <h6><i class="fas fa-cube text-success me-2"></i>Terraform</h6>
-                            <p class="small text-muted">
-                                Infrastructure as Code tool enabling version control, consistent 
-                                deployments, and easy replication of environments.
-                            </p>
-                        </div>
-                        <div class="mb-4">
-                            <h6><i class="fas fa-server text-success me-2"></i>EC2 & Auto Scaling</h6>
-                            <p class="small text-muted">
-                                Provides elastic compute capacity that automatically scales based 
-                                on demand, ensuring optimal performance and cost efficiency.
-                            </p>
-                        </div>
-                        <div class="mb-4">
-                            <h6><i class="fas fa-network-wired text-success me-2"></i>VPC & Networking</h6>
-                            <p class="small text-muted">
-                                Custom virtual private cloud providing isolated network environment 
-                                with granular control over traffic flow and security.
-                            </p>
-                        </div>
-                    </div>
+              <h4 class="mb-3">The Challenge</h4>
+              <p class="mb-4">
+                The organization needed to migrate from on-premises
+                infrastructure to the cloud while maintaining security
+                standards, ensuring scalability, and optimizing costs. Manual
+                infrastructure provisioning was creating inconsistencies and
+                making it difficult to replicate environments for testing and
+                staging.
+              </p>
 
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">Key Benefits</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    99.9% uptime achieved through multi-AZ deployment
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    40% cost reduction through rightsizing
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    Automated scaling based on traffic patterns
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    Infrastructure provisioning in under 15 minutes
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check text-success me-2"></i>
-                                    Disaster recovery RPO/RTO under 1 hour
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              <h4 class="mb-3">The Solution</h4>
+              <p class="mb-4">
+                I architected a multi-tier AWS infrastructure using Terraform,
+                implementing best practices for security, scalability, and
+                maintainability. The solution includes automated provisioning,
+                comprehensive monitoring, and disaster recovery capabilities.
+              </p>
             </div>
 
-            <!-- Implementation Details -->
-            <div class="row mt-5">
-                <div class="col-lg-12">
-                    <h3 class="mb-4">Implementation Highlights</h3>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-code fa-3x text-success mb-3"></i>
-                                    <h5 class="card-title">Infrastructure as Code</h5>
-                                    <p class="card-text">
-                                        All infrastructure defined in Terraform modules, enabling version control, 
-                                        peer reviews, and consistent deployments across environments.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
-                                    <h5 class="card-title">Auto Scaling</h5>
-                                    <p class="card-text">
-                                        Implemented dynamic scaling policies based on CPU utilization and request count, 
-                                        ensuring optimal performance during traffic spikes.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-lock fa-3x text-success mb-3"></i>
-                                    <h5 class="card-title">Security First</h5>
-                                    <p class="card-text">
-                                        Implemented defense-in-depth strategy with network isolation, 
-                                        encryption, and comprehensive logging and monitoring.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Architecture Components -->
+            <div class="mb-5">
+              <h3 class="mb-4">Infrastructure Architecture</h3>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-network-wired text-success me-2"></i
+                        >Network Layer
+                      </h5>
+                      <ul class="list-unstyled">
+                        <li>• Custom VPC with public/private subnets</li>
+                        <li>• Internet Gateway and NAT Gateways</li>
+                        <li>• Route tables and security groups</li>
+                        <li>• Network ACLs for additional security</li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-server text-success me-2"></i>Compute
+                        Layer
+                      </h5>
+                      <ul class="list-unstyled">
+                        <li>• Auto Scaling Groups for elasticity</li>
+                        <li>• Application Load Balancer</li>
+                        <li>• EC2 instances across multiple AZs</li>
+                        <li>• Launch templates with user data</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-database text-success me-2"></i>Data
+                        Layer
+                      </h5>
+                      <ul class="list-unstyled">
+                        <li>• RDS Multi-AZ for high availability</li>
+                        <li>• S3 buckets with versioning</li>
+                        <li>• ElastiCache for session management</li>
+                        <li>• Automated backups and snapshots</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-shield-alt text-success me-2"></i
+                        >Security Layer
+                      </h5>
+                      <ul class="list-unstyled">
+                        <li>• IAM roles and policies</li>
+                        <li>• AWS WAF for application protection</li>
+                        <li>• CloudTrail for audit logging</li>
+                        <li>• KMS for encryption at rest</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="tech-stack">
+              <h4 class="mb-3">Technologies Used</h4>
+              <div class="mb-4">
+                <h6>
+                  <i class="fab fa-aws text-success me-2"></i>Amazon Web
+                  Services
+                </h6>
+                <p class="small text-muted">
+                  Chosen for its comprehensive service portfolio, global
+                  infrastructure, and enterprise-grade security and compliance
+                  features.
+                </p>
+              </div>
+              <div class="mb-4">
+                <h6><i class="fas fa-cube text-success me-2"></i>Terraform</h6>
+                <p class="small text-muted">
+                  Infrastructure as Code tool enabling version control,
+                  consistent deployments, and easy replication of environments.
+                </p>
+              </div>
+              <div class="mb-4">
+                <h6>
+                  <i class="fas fa-server text-success me-2"></i>EC2 & Auto
+                  Scaling
+                </h6>
+                <p class="small text-muted">
+                  Provides elastic compute capacity that automatically scales
+                  based on demand, ensuring optimal performance and cost
+                  efficiency.
+                </p>
+              </div>
+              <div class="mb-4">
+                <h6>
+                  <i class="fas fa-network-wired text-success me-2"></i>VPC &
+                  Networking
+                </h6>
+                <p class="small text-muted">
+                  Custom virtual private cloud providing isolated network
+                  environment with granular control over traffic flow and
+                  security.
+                </p>
+              </div>
             </div>
 
-            <!-- Cost Optimization -->
-            <div class="row mt-5">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="mb-0">
-                                <i class="fas fa-dollar-sign text-success me-2"></i>Cost Optimization Strategies
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h6>Right-sizing Instances</h6>
-                                    <p class="small mb-3">
-                                        Analyzed workload patterns and selected appropriate instance types, 
-                                        resulting in 30% cost savings while maintaining performance.
-                                    </p>
-                                    <h6>Reserved Instances</h6>
-                                    <p class="small mb-3">
-                                        Utilized 1-year Reserved Instances for predictable workloads, 
-                                        achieving additional 20% cost reduction.
-                                    </p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h6>Automated Scheduling</h6>
-                                    <p class="small mb-3">
-                                        Implemented automatic shutdown of non-production environments 
-                                        during off-hours, reducing costs by 50% for dev/test environments.
-                                    </p>
-                                    <h6>Storage Optimization</h6>
-                                    <p class="small mb-3">
-                                        Used S3 lifecycle policies and intelligent tiering to optimize 
-                                        storage costs based on access patterns.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">Key Benefits</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>
+                    99.9% uptime achieved through multi-AZ deployment
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>
+                    40% cost reduction through rightsizing
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>
+                    Automated scaling based on traffic patterns
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>
+                    Infrastructure provisioning in under 15 minutes
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>
+                    Disaster recovery RPO/RTO under 1 hour
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Implementation Details -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <h3 class="mb-4">Implementation Highlights</h3>
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-code fa-3x text-success mb-3"></i>
+                    <h5 class="card-title">Infrastructure as Code</h5>
+                    <p class="card-text">
+                      All infrastructure defined in Terraform modules, enabling
+                      version control, peer reviews, and consistent deployments
+                      across environments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                    <h5 class="card-title">Auto Scaling</h5>
+                    <p class="card-text">
+                      Implemented dynamic scaling policies based on CPU
+                      utilization and request count, ensuring optimal
+                      performance during traffic spikes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-lock fa-3x text-success mb-3"></i>
+                    <h5 class="card-title">Security First</h5>
+                    <p class="card-text">
+                      Implemented defense-in-depth strategy with network
+                      isolation, encryption, and comprehensive logging and
+                      monitoring.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cost Optimization -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="mb-0">
+                  <i class="fas fa-dollar-sign text-success me-2"></i>Cost
+                  Optimization Strategies
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h6>Right-sizing Instances</h6>
+                    <p class="small mb-3">
+                      Analyzed workload patterns and selected appropriate
+                      instance types, resulting in 30% cost savings while
+                      maintaining performance.
+                    </p>
+                    <h6>Reserved Instances</h6>
+                    <p class="small mb-3">
+                      Utilized 1-year Reserved Instances for predictable
+                      workloads, achieving additional 20% cost reduction.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <h6>Automated Scheduling</h6>
+                    <p class="small mb-3">
+                      Implemented automatic shutdown of non-production
+                      environments during off-hours, reducing costs by 50% for
+                      dev/test environments.
+                    </p>
+                    <h6>Storage Optimization</h6>
+                    <p class="small mb-3">
+                      Used S3 lifecycle policies and intelligent tiering to
+                      optimize storage costs based on access patterns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 Adam Carter. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="index.html" class="text-white text-decoration-none">
-                        <i class="fas fa-home me-2"></i>Back to Home
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              &copy; <span id="copyright-year"></span> Adam Carter. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-end">
+            <a href="index.html" class="text-white text-decoration-none">
+              <i class="fas fa-home me-2"></i>Back to Home
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="display: none;">
-        <i class="fas fa-arrow-up"></i>
+    <button
+      id="backToTop"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-4"
+      style="display: none"
+    >
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

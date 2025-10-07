@@ -130,6 +130,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Set current year in footer
+  const yearSpan = document.getElementById("copyright-year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
   // Back to top functionality (for project pages)
   const backToTopBtn = document.getElementById("backToTop");
   if (backToTopBtn) {
