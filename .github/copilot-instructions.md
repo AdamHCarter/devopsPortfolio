@@ -23,12 +23,17 @@ This is a modern, responsive DevOps portfolio website showcasing Adam Carter's s
 - Include specific metrics and achievements where possible
 - Ensure all links and navigation work correctly
 
-## File Structure
+## File Structure (current)
 
-- `index.html` - Main landing page with navigation, hero, about, portfolio, and contact sections
-- `project1.html`, `project2.html`, `project3.html` - Individual project detail pages
-- `styles.css` - Custom CSS with Bootstrap overrides and additional styling
-- `script.js` - Interactive functionality and smooth scrolling
+- `public/` - Static website files (served and deployed)
+  - `public/index.html` - Main landing page with navigation, hero, about, portfolio, and contact sections
+  - `public/project1.html`, `public/project2.html`, `public/project3.html` - Individual project detail pages
+  - `public/styles.css` - Custom CSS with Bootstrap overrides and additional styling
+  - `public/script.js` - Interactive functionality and smooth scrolling
+- `.github/workflows/deploy.yml` - GitHub Actions workflow that uploads `./public` and deploys to GitHub Pages
+- `.vscode/tasks.json` - Local VS Code tasks (e.g., quick 'Open Portfolio Website')
+
+Note: The site is intended to be served from the `public/` folder. The GitHub Actions workflow currently uploads that folder and deploys it to GitHub Pages.
 
 ## Image Guidelines
 

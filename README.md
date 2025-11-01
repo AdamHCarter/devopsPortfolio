@@ -15,15 +15,20 @@ A modern, responsive portfolio website showcasing DevOps engineering skills and 
 
 ```
 devopsPortfolio/
-├── index.html              # Main landing page
-├── project1.html           # CI/CD Pipeline project details
-├── project2.html           # Cloud Infrastructure project details
-├── project3.html           # Monitoring & Analytics project details
-├── styles.css              # Custom CSS styles
-├── script.js               # Interactive JavaScript functionality
+├── public/                 # Static website files (served and deployed)
+│   ├── index.html          # Main landing page
+│   ├── project1.html       # CI/CD Pipeline project details
+│   ├── project2.html       # Cloud Infrastructure project details
+│   ├── project3.html       # Monitoring & Analytics project details
+│   ├── styles.css          # Custom CSS styles
+│   └── script.js           # Interactive JavaScript functionality
 ├── .github/
+│   ├── workflows/
+│   │   └── deploy.yml      # GitHub Actions deployment workflow
 │   └── copilot-instructions.md
-└── README.md
+├── .vscode/
+│   └── tasks.json          # VS Code tasks configuration
+└── README.md               # Project documentation
 ```
 
 ## 🛠️ Technologies Used
@@ -89,6 +94,43 @@ php -S localhost:8000
 ```
 
 Then open `http://localhost:8000` in your browser.
+
+### Hosting with GitHub Pages (this repo)
+
+This repository is set up to deploy the site to GitHub Pages using GitHub Actions. The workflow in `.github/workflows/deploy.yml` uploads the `./public` folder as an artifact and publishes it to the repository's Pages site. A few quick notes:
+
+- The site files live under the `public/` folder (e.g. `public/index.html`, `public/styles.css`, `public/script.js`).
+- Pushing to the `main` branch will trigger the `deploy.yml` workflow which publishes the `public/` folder to GitHub Pages.
+- If you want to change the published folder or workflow behavior, edit `.github/workflows/deploy.yml` in this repo.
+- To use a custom domain, configure the Pages settings in the repository (Settings → Pages) and add a `CNAME` file to `public/` if needed.
+
+This setup makes it easy to host the portfolio from this repository with automated deployments whenever you push updates. You can also trigger the deployment manually (useful for redeploying after changing repository settings or debugging) by going to the **Actions** tab in your GitHub repository, selecting the **Deploy to GitHub Pages** workflow, and clicking the **Run workflow** button.
+
+#### Configuration Notes
+
+- **Branch Name Consistency**: Ensure that the branch specified in the workflow (`master` or `main`) matches your repository's default branch.
+- **Excluding Sensitive Files**: Be cautious when uploading the entire repository. Exclude any sensitive files or directories using `.gitignore` or by specifying paths in the workflow.
+- **Manual Triggers**: The `workflow_dispatch` event allows you to run the workflow manually from the Actions tab.
+- **Permissions**: The `permissions` section is essential for granting the necessary rights to the workflow for deploying to GitHub Pages.
+- **Concurrency**: The `concurrency` setting ensures that only one deployment occurs at a time, preventing conflicts.
+
+#### Troubleshooting
+
+If your workflow fails, check the logs in the "Actions" tab to identify and fix issues. Common problems include:
+
+- Incorrect paths in the workflow configuration
+- Missing permissions for GitHub Pages deployment
+- Syntax errors in the YAML file
+- Branch name mismatches
+
+### Previewing the Pages site URL after deployment
+
+After the GitHub Actions workflow completes, the published Pages URL can be found in a couple of places:
+
+- Actions run summary: go to the repository's Actions tab, open the latest run for the "Deploy static content to Pages" workflow, and check the job summary or the "Deploy to GitHub Pages" step — the deployed site URL is usually shown there (the workflow sets the deployment output `page_url`).
+- Repository Pages settings: open Settings → Pages in the repository. Once the deployment finishes, the "Site" section will show the published URL.
+
+Tip: the workflow in `.github/workflows/deploy.yml` exposes the deployed page URL as `${{ steps.deployment.outputs.page_url }}` which GitHub surfaces in the Actions run and environment/deployment details.
 
 ## 📧 Contact Information
 
